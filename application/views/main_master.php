@@ -1,6 +1,6 @@
 <!DOCTYPE html">
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="nl">
 <head>
 <meta charset="utf-8" />
 <head>
@@ -15,10 +15,8 @@
     <link rel="stylesheet" type="text/css" 
           href="<?php echo base_url() . APPPATH; ?>css/normalize.css" />
     <link rel="stylesheet" type="text/css" 
-          href="<?php echo base_url() . APPPATH; ?>css/skeleton.css" />
-    <link rel="stylesheet" type="text/css" 
-          href="<?php echo base_url() . APPPATH; ?>css/jquery-ui.css" />    
-    <script type="text/javascript">
+          href="<?php echo base_url() . APPPATH; ?>css/skeleton.css" />    
+     <script type="text/javascript">
         var site_url = '<?php echo site_url();?>';
 	   var img_url = '<?php echo base_url() . APPPATH; ?>';
     </script>

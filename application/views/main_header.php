@@ -1,1 +1,1 @@
-<img src="<?php echo base_url() . APPPATH; ?>images/logos/logo.jpg" />
+<p>Dit is een nav kappa</p>
