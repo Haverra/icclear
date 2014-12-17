@@ -24,6 +24,9 @@ class Home extends CI_Controller {
             $this->load->view('home_pagina.php');
 		
 	}
+        public function derp(){
+            $this->load->view('test.php');
+        }
 }
 
 /* End of file welcome.php */
