@@ -4,6 +4,7 @@
 <head>
 <meta charset="utf-8" />
 <head>
+    <meta name="viewport" content="width=device-width">
     <?php
 
     // EGROUP ICT ICCLCEAR
@@ -25,6 +26,12 @@
 <script src="<?php echo base_url() . APPPATH; ?>js/modernizr.min.js"></script>
 </head>
 <body>
+    <div class="container">
+    <div class="row">
+        <div class="three columns">
+            <h2>Logo</h2>
+        </div>
+        <div class="nine columns">
     <nav>
 <div id="nav">
 <ul id="menu">
@@ -35,10 +42,13 @@
 </ul>
 </div>
 </nav>
+        </div>
+    </div>
     <div id="hoofding"><?php echo $header; ?></div>
     <div id="inhoud"><?php echo $content; ?></div>
+    </div>
     <script src="<?php echo base_url() . APPPATH; ?>js/jquery.min.js"></script>
-    <script src="<?php echo base_url() . APPPATH; ?>js/jquery.slicknav.js"></script>
+    <script src="<?php echo base_url() . APPPATH; ?>js/jquery.slicknav.min.js"></script>
 <script type="text/javascript">
 $(document).ready(function(){
 	$('#menu').slicknav();
