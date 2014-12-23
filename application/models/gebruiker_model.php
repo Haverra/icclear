@@ -1,17 +1,6 @@
 <?php
 
-class User_model extends CI_Model {
-
-    // +----------------------------------------------------------
-    // | TV Shop
-    // +----------------------------------------------------------
-    // | KHK - 2 TI - 201x-201x
-    // +----------------------------------------------------------
-    // | User model
-    // |
-    // +----------------------------------------------------------
-    // | K. Vangeel
-    // +----------------------------------------------------------
+class Gebruiker_model extends CI_Model {
 
     function __construct()
     {
@@ -29,4 +18,26 @@ class User_model extends CI_Model {
             return null;
         }
     }
+    
+    function countGebruikersAanspreking($Id) {
+        
+        $this->db->where('aansprekingId', $Id);
+        $this->db->from('icclear_gebruiker');
+        return $this->db->count_all_results();
+    }
+    
+    function countGebruikersAdresType($Id) {
+        
+        $this->db->where('adresTypeId', $Id);
+        $this->db->from('icclear_gebruiker');
+        return $this->db->count_all_results();
+    }
+    
+    function countGebruikersGeslacht($Id) {
+        
+        $this->db->where('geslachtId', $Id);
+        $this->db->from('icclear_gebruiker');
+        return $this->db->count_all_results();
+    }
+    
 }
