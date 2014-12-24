@@ -7,7 +7,7 @@ class Aanspreking_model extends CI_Model {
         parent::__construct();
     }
     
-        function getAlle()
+        function getAll()
     {
         $query = $this->db->get('icclear_aanspreking');
         return $query->result();

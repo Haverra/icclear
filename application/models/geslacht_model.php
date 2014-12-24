@@ -7,7 +7,7 @@ class Geslacht_model extends CI_Model {
         parent::__construct();
     }
     
-        function getAlle()
+        function getAll()
     {
         $query = $this->db->get('icclear_geslacht');
         return $query->result();

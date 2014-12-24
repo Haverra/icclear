@@ -17,8 +17,9 @@
           href="<?php echo base_url() . APPPATH; ?>css/bootstrap.min.css" />   
     <link rel="stylesheet" type="text/css" 
           href="<?php echo base_url() . APPPATH; ?>css/jquery-ui.css" />
+    <script src="<?php echo base_url() . APPPATH; ?>js/jquery.min.js"></script>
     <script type="text/javascript" 
-            src="<?php echo base_url() . APPPATH; ?>js/jquery-ui.js"></script>    
+            src="<?php echo base_url() . APPPATH; ?>js/jquery-ui.js"></script> 
      <script type="text/javascript">
         var site_url = '<?php echo site_url();?>';
 	   var img_url = '<?php echo base_url() . APPPATH; ?>';
@@ -66,8 +67,7 @@
     <div class="container">
     <div id="hoofding"><?php echo $header; ?></div>
     <div id="inhoud"><?php echo $content; ?></div>
-    </div>
-    <script src="<?php echo base_url() . APPPATH; ?>js/jquery.min.js"></script>
-    <script src="<?php echo base_url() . APPPATH; ?>js/bootstrap.min.js"></script>
+    </div>    
+    <script src="<?php echo base_url() . APPPATH; ?>js/bootstrap.min.js"></script>    
 </body>
 </html>
