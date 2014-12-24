@@ -28,6 +28,17 @@ class Aanspreking extends CI_Controller {
             $this->load->model('aanspreking_model');
             echo $this->aanspreking_model->delete($id);
     }
+    public function update(){
+        $aanspreking->id = $this->input->get('id');
+        $aanspreking->naam = $this->input->get('naam');
+        $this->load->model('aanspreking_model');
+        if ($aanspreking->id == 0){
+            $this->aanspreking_model->insert($aanspreking);
+        }else {
+            $this->aanspreking_model->update($aanspreking);
+        }
+        
+    }
 
 }
 
