@@ -16,21 +16,23 @@ class Admin extends CI_Controller {
     }
 
     public function login() {
-        $email = $this->input->post('email');
+        $email = $this->input->post('gebruikersnaam');
         $password = $this->input->post('password');
         $this->load->model('gebruiker_model');
-        if (!isset($email) && $password) {
+        if (!isset($gebruikersnaam) && $password) {
             
         } else {
             $user = $this->gebruiker_model->login($email, $password);
             if (is_null($user)) {
-               
+                $data['title'] = 'Aanmelden';
+                $partials = array('header' => 'main_header', 'content' => 'login');
             } else {
-               
+                $data['title'] = 'Aanmelden';
+                $data['naam'] =$user->gebruikersnaam;
+                $partials = array('header' => 'main_header', 'content' => 'login');
             }
         }
-        $data['title'] = 'Aanmelden';
-        $partials = array('header' => 'main_header', 'content' => 'login');
+
         $this->template->load('main_master', $partials, $data);
     }
 

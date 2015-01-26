@@ -4,13 +4,16 @@ $this->load->helper('form');
 
 <h4><?php echo $title; ?></h4>
 
+
+
+<h4><?php echo $naam; ?></h4>
 <?php
    
     echo form_open('gebruiker/login');
 ?>
 <table>
     <tr>
-        <td><?php echo form_label('Email:', 'email'); ?></td>
+        <td><?php echo form_label('Gebruikersnaam:', 'gebruikersnaam'); ?></td>
         <td><?php echo form_input(array('name' => 'email', 'id' => 'email', 'size' => '30')); ?></td>
     </tr>
     <tr>
